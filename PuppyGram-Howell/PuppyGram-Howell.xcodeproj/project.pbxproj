@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28080CAC27D28FCE0012BC19 /* FlickrDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28080CAB27D28FCE0012BC19 /* FlickrDataTests.swift */; };
+		28080CAF27D2904E0012BC19 /* Codables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28080CAE27D2904E0012BC19 /* Codables.swift */; };
+		28080CB127D2910E0012BC19 /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28080CB027D2910E0012BC19 /* Data+JSON.swift */; };
+		28080CED27D54BFD0012BC19 /* XCTAssertEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28080CEC27D54BFD0012BC19 /* XCTAssertEqual.swift */; };
+		28EAE35C27ADEB6E00295A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE35B27ADEB6E00295A91 /* AppDelegate.swift */; };
+		28EAE35E27ADEB6E00295A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE35D27ADEB6E00295A91 /* SceneDelegate.swift */; };
+		28EAE36027ADEB6E00295A91 /* PuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE35F27ADEB6E00295A91 /* PuppyViewController.swift */; };
+		28EAE36527ADEB7000295A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EAE36427ADEB7000295A91 /* Assets.xcassets */; };
+		28EAE36827ADEB7000295A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EAE36627ADEB7000295A91 /* LaunchScreen.storyboard */; };
+		28EAE37327ADEB7000295A91 /* PuppyGram_HowellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE37227ADEB7000295A91 /* PuppyGram_HowellTests.swift */; };
+		28EAE38C27ADFC6800295A91 /* PuppyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE38B27ADFC6800295A91 /* PuppyCell.swift */; };
+		28EAE39327AE266D00295A91 /* Puppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE39227AE266D00295A91 /* Puppy.swift */; };
+		28EAE39827AE39C300295A91 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE39727AE39C300295A91 /* Error.swift */; };
+		28EAE39A27AE3A6F00295A91 /* PuppyGramClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE39927AE3A6F00295A91 /* PuppyGramClient.swift */; };
+		28EAE39C27AE3E3F00295A91 /* PuppyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE39B27AE3E3F00295A91 /* PuppyViewModel.swift */; };
+		28EAE39E27AEACE100295A91 /* UIImage+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE39D27AEACE100295A91 /* UIImage+Cache.swift */; };
+		28EAE3A127AF1B2500295A91 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EAE3A027AF1B2500295A91 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28EAE36F27ADEB7000295A91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28EAE35027ADEB6E00295A91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28EAE35727ADEB6E00295A91;
+			remoteInfo = "PuppyGram-Howell";
+		};
+		28EAE37927ADEB7000295A91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28EAE35027ADEB6E00295A91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28EAE35727ADEB6E00295A91;
+			remoteInfo = "PuppyGram-Howell";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28080CA827D28E9D0012BC19 /* FlickrData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlickrData.json; sourceTree = "<group>"; };
+		28080CAB27D28FCE0012BC19 /* FlickrDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDataTests.swift; sourceTree = "<group>"; };
+		28080CAE27D2904E0012BC19 /* Codables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codables.swift; sourceTree = "<group>"; };
+		28080CB027D2910E0012BC19 /* Data+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
+		28080CEC27D54BFD0012BC19 /* XCTAssertEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTAssertEqual.swift; sourceTree = "<group>"; };
+		28EAE35827ADEB6E00295A91 /* PuppyGram-Howell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PuppyGram-Howell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EAE35B27ADEB6E00295A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28EAE35D27ADEB6E00295A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28EAE35F27ADEB6E00295A91 /* PuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyViewController.swift; sourceTree = "<group>"; };
+		28EAE36427ADEB7000295A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28EAE36727ADEB7000295A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28EAE36927ADEB7000295A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28EAE36E27ADEB7000295A91 /* PuppyGram-HowellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PuppyGram-HowellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EAE37227ADEB7000295A91 /* PuppyGram_HowellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyGram_HowellTests.swift; sourceTree = "<group>"; };
+		28EAE37827ADEB7000295A91 /* PuppyGram-HowellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PuppyGram-HowellUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EAE38B27ADFC6800295A91 /* PuppyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyCell.swift; sourceTree = "<group>"; };
+		28EAE39227AE266D00295A91 /* Puppy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puppy.swift; sourceTree = "<group>"; };
+		28EAE39727AE39C300295A91 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		28EAE39927AE3A6F00295A91 /* PuppyGramClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyGramClient.swift; sourceTree = "<group>"; };
+		28EAE39B27AE3E3F00295A91 /* PuppyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyViewModel.swift; sourceTree = "<group>"; };
+		28EAE39D27AEACE100295A91 /* UIImage+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Cache.swift"; sourceTree = "<group>"; };
+		28EAE39F27AF0DC900295A91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		28EAE3A027AF1B2500295A91 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28EAE35527ADEB6E00295A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EAE36B27ADEB7000295A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EAE37527ADEB7000295A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28080CA727D28E5A0012BC19 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				28080CA827D28E9D0012BC19 /* FlickrData.json */,
+				28080CB027D2910E0012BC19 /* Data+JSON.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		28080CAD27D2903F0012BC19 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				28080CAE27D2904E0012BC19 /* Codables.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		28080CEB27D54BE30012BC19 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				28080CEC27D54BFD0012BC19 /* XCTAssertEqual.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		28EAE34F27ADEB6E00295A91 = {
+			isa = PBXGroup;
+			children = (
+				28EAE39F27AF0DC900295A91 /* README.md */,
+				28EAE35A27ADEB6E00295A91 /* PuppyGram-Howell */,
+				28EAE37127ADEB7000295A91 /* PuppyGram-HowellTests */,
+				28EAE35927ADEB6E00295A91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28EAE35927ADEB6E00295A91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE35827ADEB6E00295A91 /* PuppyGram-Howell.app */,
+				28EAE36E27ADEB7000295A91 /* PuppyGram-HowellTests.xctest */,
+				28EAE37827ADEB7000295A91 /* PuppyGram-HowellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28EAE35A27ADEB6E00295A91 /* PuppyGram-Howell */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE36927ADEB7000295A91 /* Info.plist */,
+				28EAE35B27ADEB6E00295A91 /* AppDelegate.swift */,
+				28EAE35D27ADEB6E00295A91 /* SceneDelegate.swift */,
+				28EAE36427ADEB7000295A91 /* Assets.xcassets */,
+				28EAE36627ADEB7000295A91 /* LaunchScreen.storyboard */,
+				28EAE39027AE260600295A91 /* Cell */,
+				28EAE38F27AE25F100295A91 /* Model */,
+				28EAE39527AE394000295A91 /* Networking  */,
+				28EAE39627AE39A100295A91 /* Utilities */,
+				28EAE39427AE386F00295A91 /* ViewModels */,
+				28EAE39127AE262600295A91 /* Views */,
+			);
+			path = "PuppyGram-Howell";
+			sourceTree = "<group>";
+		};
+		28EAE37127ADEB7000295A91 /* PuppyGram-HowellTests */ = {
+			isa = PBXGroup;
+			children = (
+				28080CEB27D54BE30012BC19 /* Helper */,
+				28080CAD27D2903F0012BC19 /* Mocks */,
+				28080CA727D28E5A0012BC19 /* Data */,
+				28EAE37227ADEB7000295A91 /* PuppyGram_HowellTests.swift */,
+				28080CAB27D28FCE0012BC19 /* FlickrDataTests.swift */,
+			);
+			path = "PuppyGram-HowellTests";
+			sourceTree = "<group>";
+		};
+		28EAE38F27AE25F100295A91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE39227AE266D00295A91 /* Puppy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28EAE39027AE260600295A91 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE38B27ADFC6800295A91 /* PuppyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		28EAE39127AE262600295A91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE35F27ADEB6E00295A91 /* PuppyViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28EAE39427AE386F00295A91 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE39B27AE3E3F00295A91 /* PuppyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		28EAE39527AE394000295A91 /* Networking  */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE39927AE3A6F00295A91 /* PuppyGramClient.swift */,
+			);
+			path = "Networking ";
+			sourceTree = "<group>";
+		};
+		28EAE39627AE39A100295A91 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				28EAE39727AE39C300295A91 /* Error.swift */,
+				28EAE39D27AEACE100295A91 /* UIImage+Cache.swift */,
+				28EAE3A027AF1B2500295A91 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28EAE35727ADEB6E00295A91 /* PuppyGram-Howell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EAE38227ADEB7000295A91 /* Build configuration list for PBXNativeTarget "PuppyGram-Howell" */;
+			buildPhases = (
+				28EAE35427ADEB6E00295A91 /* Sources */,
+				28EAE35527ADEB6E00295A91 /* Frameworks */,
+				28EAE35627ADEB6E00295A91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PuppyGram-Howell";
+			productName = "PuppyGram-Howell";
+			productReference = 28EAE35827ADEB6E00295A91 /* PuppyGram-Howell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28EAE36D27ADEB7000295A91 /* PuppyGram-HowellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EAE38527ADEB7000295A91 /* Build configuration list for PBXNativeTarget "PuppyGram-HowellTests" */;
+			buildPhases = (
+				28EAE36A27ADEB7000295A91 /* Sources */,
+				28EAE36B27ADEB7000295A91 /* Frameworks */,
+				28EAE36C27ADEB7000295A91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28EAE37027ADEB7000295A91 /* PBXTargetDependency */,
+			);
+			name = "PuppyGram-HowellTests";
+			productName = "PuppyGram-HowellTests";
+			productReference = 28EAE36E27ADEB7000295A91 /* PuppyGram-HowellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28EAE37727ADEB7000295A91 /* PuppyGram-HowellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EAE38827ADEB7000295A91 /* Build configuration list for PBXNativeTarget "PuppyGram-HowellUITests" */;
+			buildPhases = (
+				28EAE37427ADEB7000295A91 /* Sources */,
+				28EAE37527ADEB7000295A91 /* Frameworks */,
+				28EAE37627ADEB7000295A91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28EAE37A27ADEB7000295A91 /* PBXTargetDependency */,
+			);
+			name = "PuppyGram-HowellUITests";
+			productName = "PuppyGram-HowellUITests";
+			productReference = 28EAE37827ADEB7000295A91 /* PuppyGram-HowellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28EAE35027ADEB6E00295A91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					28EAE35727ADEB6E00295A91 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					28EAE36D27ADEB7000295A91 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 28EAE35727ADEB6E00295A91;
+					};
+					28EAE37727ADEB7000295A91 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 28EAE35727ADEB6E00295A91;
+					};
+				};
+			};
+			buildConfigurationList = 28EAE35327ADEB6E00295A91 /* Build configuration list for PBXProject "PuppyGram-Howell" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28EAE34F27ADEB6E00295A91;
+			productRefGroup = 28EAE35927ADEB6E00295A91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28EAE35727ADEB6E00295A91 /* PuppyGram-Howell */,
+				28EAE36D27ADEB7000295A91 /* PuppyGram-HowellTests */,
+				28EAE37727ADEB7000295A91 /* PuppyGram-HowellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28EAE35627ADEB6E00295A91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EAE36827ADEB7000295A91 /* LaunchScreen.storyboard in Resources */,
+				28EAE36527ADEB7000295A91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EAE36C27ADEB7000295A91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EAE37627ADEB7000295A91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28EAE35427ADEB6E00295A91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EAE36027ADEB6E00295A91 /* PuppyViewController.swift in Sources */,
+				28EAE39C27AE3E3F00295A91 /* PuppyViewModel.swift in Sources */,
+				28EAE39A27AE3A6F00295A91 /* PuppyGramClient.swift in Sources */,
+				28EAE35C27ADEB6E00295A91 /* AppDelegate.swift in Sources */,
+				28EAE35E27ADEB6E00295A91 /* SceneDelegate.swift in Sources */,
+				28EAE3A127AF1B2500295A91 /* Extensions.swift in Sources */,
+				28EAE39E27AEACE100295A91 /* UIImage+Cache.swift in Sources */,
+				28EAE39327AE266D00295A91 /* Puppy.swift in Sources */,
+				28EAE39827AE39C300295A91 /* Error.swift in Sources */,
+				28EAE38C27ADFC6800295A91 /* PuppyCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EAE36A27ADEB7000295A91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28080CAC27D28FCE0012BC19 /* FlickrDataTests.swift in Sources */,
+				28080CB127D2910E0012BC19 /* Data+JSON.swift in Sources */,
+				28080CED27D54BFD0012BC19 /* XCTAssertEqual.swift in Sources */,
+				28080CAF27D2904E0012BC19 /* Codables.swift in Sources */,
+				28EAE37327ADEB7000295A91 /* PuppyGram_HowellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EAE37427ADEB7000295A91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28EAE37027ADEB7000295A91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28EAE35727ADEB6E00295A91 /* PuppyGram-Howell */;
+			targetProxy = 28EAE36F27ADEB7000295A91 /* PBXContainerItemProxy */;
+		};
+		28EAE37A27ADEB7000295A91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28EAE35727ADEB6E00295A91 /* PuppyGram-Howell */;
+			targetProxy = 28EAE37927ADEB7000295A91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28EAE36627ADEB7000295A91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EAE36727ADEB7000295A91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28EAE38027ADEB7000295A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28EAE38127ADEB7000295A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28EAE38327ADEB7000295A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PuppyGram-Howell/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howell.PuppyGram-Howell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28EAE38427ADEB7000295A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PuppyGram-Howell/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howell.PuppyGram-Howell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28EAE38627ADEB7000295A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howell.PuppyGram-HowellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyGram-Howell.app/PuppyGram-Howell";
+			};
+			name = Debug;
+		};
+		28EAE38727ADEB7000295A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howell.PuppyGram-HowellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyGram-Howell.app/PuppyGram-Howell";
+			};
+			name = Release;
+		};
+		28EAE38927ADEB7000295A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howell.PuppyGram-HowellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PuppyGram-Howell";
+			};
+			name = Debug;
+		};
+		28EAE38A27ADEB7000295A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howell.PuppyGram-HowellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PuppyGram-Howell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28EAE35327ADEB6E00295A91 /* Build configuration list for PBXProject "PuppyGram-Howell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EAE38027ADEB7000295A91 /* Debug */,
+				28EAE38127ADEB7000295A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EAE38227ADEB7000295A91 /* Build configuration list for PBXNativeTarget "PuppyGram-Howell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EAE38327ADEB7000295A91 /* Debug */,
+				28EAE38427ADEB7000295A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EAE38527ADEB7000295A91 /* Build configuration list for PBXNativeTarget "PuppyGram-HowellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EAE38627ADEB7000295A91 /* Debug */,
+				28EAE38727ADEB7000295A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EAE38827ADEB7000295A91 /* Build configuration list for PBXNativeTarget "PuppyGram-HowellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EAE38927ADEB7000295A91 /* Debug */,
+				28EAE38A27ADEB7000295A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28EAE35027ADEB6E00295A91 /* Project object */;
+}
